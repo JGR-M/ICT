@@ -1,0 +1,136 @@
+{{#each errors}}
+{{!-- <div class="alert alert-danger">{{text}}</div>            form validation shows red box of alert --}}
+{{else}}
+
+{{/each}}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<br>
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <img src="images/contact.png" alt="" srcset="" width="100%">
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+
+                        <h3>For more information <br>
+                            Send me an E-mail @</h3>
+                        <h3 style="color: blue;" >intercodetinental@outlook.com</h3>
+
+                        <br>
+                        <br>
+
+                        <h3>Contact: Germán</h3>
+                        <h2>832-857-0687</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+
+
+
+        <div class="card card-body">
+            <h3 style="color: rgb(36, 36, 255);">Contact Me</h3>
+            <form action="/user" method='post'>
+                <div class="form-group">
+                    <label for="user">Name</label>
+                    <input type="text" class="form-control" name="user" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="text" class="form-control" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" class="form-control" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="text" class="form-control" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <br>
+        <br>
+    </div>
+</div>
+</div>
+
+<br><br>
+<br>
+
+{{!-- =====================================================================================================  footer --}}
+
+<footer class="page-footer" style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m4 l4" >
+                <img src="images/crest.png" style="width: 140px; lenght: 140px">
+                <h6 style="color: rgb(70, 70, 245);">INTER&#60;/CODE&#62;TINENTAL ©</h6>
+                <p style="font-family: cursive;">Established in 2020</p>
+                <p>All Rights Reserved.</p>
+            </div>
+            <div class="col s6 m4 l4" >
+
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="/about">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="/services">Services</a></li>
+                    <li><a class="grey-text text-lighten-3" href="/websites">Websites</span> </a></li>
+                    <br>
+                </ul>
+            </div>
+            <br>
+        </div>
+    </div>
+{{!-- ================================================================================== end of footer --}}
+
+<br>
+<br>
+
+
+
+<style>
+    body {
+        background-image: url('images/blak-bkg.png');
+    }
+
+    h2 {
+        color: rgb(5, 5, 231);
+    }
+
+    h3 {
+        color: rgb(242, 249, 255);
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+</style>
